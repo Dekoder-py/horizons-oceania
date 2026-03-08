@@ -8,7 +8,7 @@
 
 <div id="title">
 	<h2>Hack Club</h2>
-	<h1>Horizons Oceania</h1> <!-- TODO: make this say Horizons <event name> -->
+	<h1>Horizons Crux</h1>
 </div>
 <p id="subtitle">July 10 - 12, 2026</p>
 <p id="caption">Hackathon in Sydney. For high schoolers, by high schoolers.</p>
