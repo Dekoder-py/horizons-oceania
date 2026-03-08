@@ -1,2 +1,27 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<svelte:window on:click={enterClicked} on:keydown={(e) => e.key === 'Enter' && enterClicked()} />
+
+<script lang="ts">
+	function enterClicked() {
+		console.log('Clicked, going to next page one day when we code that in :yesyes:');
+	}
+</script>
+
+<div id="title">
+	<h2>Hack Club</h2>
+	<h1>Horizons Oceania</h1> <!-- TODO: make this say Horizons <event name> -->
+</div>
+<p id="subtitle">July 10 - 12, 2026</p>
+<p id="caption">Hackathon in Sydney. For high schoolers, by high schoolers.</p>
+
+<p>Click or Press Enter</p>
+
+
+<style>
+	#title h2 {
+		margin-bottom: 0px;
+	}
+
+	#title h1 {
+		margin-top: 0px;
+	}
+</style>
