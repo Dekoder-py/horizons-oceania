@@ -5,13 +5,19 @@
 	let hourRequirement = 30 + ' hours';
 </script>
 
-<div id="title">
-	<h2>Hack Club</h2>
-	<h1>{eventName}</h1>
-</div>
+<svelte:head>
+	<title>{eventName}</title>
+</svelte:head>
 
-<p id="subtitle">{eventCity} | July 10 - 12, 2026</p>
-<p id="caption">Hackathons around the world. For high schoolers, by high schoolers.</p>
+<div id="hero">
+	<div id="title">
+		<h2>Hack Club</h2>
+		<h1>{eventName}</h1>
+	</div>
+
+	<p id="subtitle">{eventCity} | July 10 - 12, 2026</p>
+	<p id="caption">Hackathons around the world. For high schoolers, by high schoolers.</p>
+</div>
 
 <div id="overview">
 	<h2>Overview: What is Horizons?</h2>
@@ -30,11 +36,21 @@
 
 	<p>
 		Food, snacks, and travel will be fully funded, plus, there'll be some awesome swag there! Flight
-		stipends will be avalible too. The hackathon is open to anyone between <b>13 and 18 years old</b>.
+		stipends will be avalible too. The hackathon is open to anyone between <b>13 and 18 years old</b
+		>.
 	</p>
 </div>
 
 <style>
+  #hero {
+    height: 100vh;
+    text-align: center;
+  }
+
+  #overview {
+    padding-left: 2em;
+  }
+
 	#title h2 {
 		margin-bottom: 0px;
 	}
