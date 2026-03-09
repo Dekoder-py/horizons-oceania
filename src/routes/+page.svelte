@@ -1,20 +1,23 @@
-<svelte:window on:click={enterClicked} on:keydown={(e) => e.key === 'Enter' && enterClicked()} />
-
 <script lang="ts">
-	function enterClicked() {
-		console.log('Clicked, going to next page one day when we code that in :yesyes:');
-	}
+	let eventCity = 'Sydney';
+	let eventName = 'Horizons Crux';
 </script>
 
 <div id="title">
 	<h2>Hack Club</h2>
-	<h1>Horizons Crux</h1>
+	<h1>{eventName}</h1>
 </div>
-<p id="subtitle">July 10 - 12, 2026</p>
-<p id="caption">Hackathon in Sydney. For high schoolers, by high schoolers.</p>
 
-<p>Click or Press Enter</p>
+<p id="subtitle">{eventCity} | July 10 - 12, 2026</p>
+<p id="caption">Hackathons around the world. For high schoolers, by high schoolers.</p>
 
+<div id="overview">
+	<h2>Overview: What is Horizons?</h2>
+	<p>
+		Horizons is a group of hackathons around the world. From July 10 to 12, join us in {eventCity} for
+		{eventName}!
+	</p>
+</div>
 
 <style>
 	#title h2 {
