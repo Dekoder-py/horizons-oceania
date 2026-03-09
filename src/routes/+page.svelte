@@ -1,6 +1,8 @@
 <script lang="ts">
 	let eventCity = 'Sydney';
 	let eventName = 'Horizons Crux';
+
+	let hourRequirement = 30 + ' hours';
 </script>
 
 <div id="title">
@@ -15,7 +17,20 @@
 	<h2>Overview: What is Horizons?</h2>
 	<p>
 		Horizons is a group of hackathons around the world. From July 10 to 12, join us in {eventCity} for
-		{eventName}!
+		{eventName}! <br />
+		Horizons is organised by
+		<a href="https://hackclub.com" referrerpolicy="no-referrer">Hack Club</a> (a 501(c)(3) nonprofit),
+		by teenagers, for teenagers.
+	</p>
+
+	<p>
+		Qualify for {eventName} by creating projects for {hourRequirement}, and join 100+ <!-- TODO: check and update num of people -->
+		teenagers in {eventCity} for a hackathon that <!-- TODO: finish this sentence -->
+	</p>
+
+	<p>
+		Food, snacks, and travel will be fully funded, plus, there'll be some awesome swag there! Flight
+		stipends will be avalible too. The hackathon is open to anyone between <b>13 and 18 years old</b>.
 	</p>
 </div>
 
