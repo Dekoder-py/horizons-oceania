@@ -30,8 +30,8 @@
 	</p>
 
 	<p>
-		Qualify for {eventName} by creating projects for {hourRequirement}, and join 100+ <!-- TODO: check and update num of people -->
-		teenagers in {eventCity} for a hackathon that <!-- TODO: finish this sentence -->
+		Qualify for {eventName} by creating projects for {hourRequirement}, and join 100+ likeminded <!-- TODO: check and update num of people -->
+		teenagers in {eventCity} to create something amazing!
 	</p>
 
 	<p>
