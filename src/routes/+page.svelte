@@ -13,7 +13,7 @@
 	><img
 		style="position: absolute; top: 0; left: 10px; border: 0; width: 256px; z-index: 999;"
 		src="https://assets.hackclub.com/flag-orpheus-top.svg"
-		alt="Hack Club"
+		alt="Hack Club Flag"
 	/></a
 >
 
