@@ -40,7 +40,7 @@
 	</p>
 
 	<p>
-		Qualify for {eventName} by creating projects for {hourRequirement}, and join 100+ likeminded <!-- TODO: check and update num of people -->
+		Qualify for {eventName} by spending {hourRequirement} creating projects, and you'll get to join 100+ likeminded <!-- TODO: check and update num of people -->
 		teenagers in {eventCity} to create something amazing!
 	</p>
 
