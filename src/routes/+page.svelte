@@ -2,7 +2,7 @@
 	let eventCity = 'Sydney';
 	let eventName = 'Horizons Crux';
 
-	let hourRequirement = 30 + ' hours';
+	let hourRequirement = 34 + ' hours';
 </script>
 
 <svelte:head>
