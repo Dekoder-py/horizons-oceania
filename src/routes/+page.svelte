@@ -1,8 +1,8 @@
 <script lang="ts">
 	const eventCity = 'Sydney';
 	const eventName = 'Horizons Crux';
-  const venue = 'VENUE TBD';
-  const hours = 35;
+	const venue = 'VENUE TBD';
+	const hours = 35;
 
 	let hourRequirement = hours + ' hours';
 
@@ -50,7 +50,7 @@
 	<div id="section">
 		<h2>Overview: What is Horizons?</h2>
 		<p>
-			Horizons is a group of hackathons around the world. From July 10 to 12, join us in {eventCity} for
+			<a href="https://horizons.hackclub.com">Horizons</a> is a group of hackathons around the world. From July 10 to 12, join us in {eventCity} for
 			{eventName}! <br />
 			Horizons is organised by
 			<a href="https://hackclub.com" referrerpolicy="no-referrer">Hack Club</a> (a 501(c)(3) nonprofit),
@@ -67,6 +67,26 @@
 			Flight stipends will be avalible too. The hackathon is open to anyone between <b
 				>13 and 18 years old</b
 			>.
+		</p>
+
+		<h3>What is Hack Club?</h3>
+		<p>
+			Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to
+			code and build projects. We’re the largest teen-led coding community, with over 50,000
+			students building projects with their friends in Hack Club each year.
+		</p>
+		<p>Some of our past events include:</p>
+		<ul>
+			<li>Juice: a 2-month game jam followed by a 7-day pop-up cafe in Shanghai, China</li>
+			<li>Undercity: a 4-day hardware hackathon in GitHub HQ, San Francisco</li>
+			<li>
+				Shiba: a 7-day pop-up arcade in Tokyo, Japan where teenagers built their own arcade machines
+			</li>
+		</ul>
+		<p>
+			... and many more!
+			<br />
+			To learn more about Hack Club, visit the <a href="https://hackclub.com">main website</a> and <a href="https://hackclub.com/philosophy/">Hack Club Philosophy</a>.
 		</p>
 	</div>
 {:else if shownSection === 'details'}
