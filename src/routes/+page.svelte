@@ -3,6 +3,8 @@
 	let eventName = 'Horizons Crux';
 
 	let hourRequirement = 34 + ' hours';
+
+  let shownSection = $state("overview");
 </script>
 
 <svelte:head>
@@ -29,6 +31,12 @@
 	<div class="down-arrow"></div>
 </div>
 
+<nav>
+<button onclick={() => {shownSection="overview"}}>Overview</button>
+<button onclick={() => {shownSection="details"}}>Details</button>
+</nav>
+
+{#if shownSection === "overview"}
 <div id="overview">
 	<h2>Overview: What is Horizons?</h2>
 	<p>
@@ -50,6 +58,9 @@
 		>.
 	</p>
 </div>
+{:else if shownSection === "details"}
+<h1>Details go here</h1>
+{/if}
 
 <style>
 	#hero {
