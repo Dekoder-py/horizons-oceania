@@ -1,10 +1,12 @@
 <script lang="ts">
-	let eventCity = 'Sydney';
-	let eventName = 'Horizons Crux';
+	const eventCity = 'Sydney';
+	const eventName = 'Horizons Crux';
+  const venue = 'VENUE TBD';
+  const hours = 35;
 
-	let hourRequirement = 34 + ' hours';
+	let hourRequirement = hours + ' hours';
 
-  let shownSection = $state("overview");
+	let shownSection = $state('overview');
 </script>
 
 <svelte:head>
@@ -32,34 +34,50 @@
 </div>
 
 <nav>
-<button onclick={() => {shownSection="overview"}}>Overview</button>
-<button onclick={() => {shownSection="details"}}>Details</button>
+	<button
+		onclick={() => {
+			shownSection = 'overview';
+		}}>Overview</button
+	>
+	<button
+		onclick={() => {
+			shownSection = 'details';
+		}}>Details</button
+	>
 </nav>
 
-{#if shownSection === "overview"}
-<div id="overview">
-	<h2>Overview: What is Horizons?</h2>
-	<p>
-		Horizons is a group of hackathons around the world. From July 10 to 12, join us in {eventCity} for
-		{eventName}! <br />
-		Horizons is organised by
-		<a href="https://hackclub.com" referrerpolicy="no-referrer">Hack Club</a> (a 501(c)(3) nonprofit),
-		by teenagers, for teenagers.
-	</p>
+{#if shownSection === 'overview'}
+	<div id="section">
+		<h2>Overview: What is Horizons?</h2>
+		<p>
+			Horizons is a group of hackathons around the world. From July 10 to 12, join us in {eventCity} for
+			{eventName}! <br />
+			Horizons is organised by
+			<a href="https://hackclub.com" referrerpolicy="no-referrer">Hack Club</a> (a 501(c)(3) nonprofit),
+			by teenagers, for teenagers.
+		</p>
 
-	<p>
-		Qualify for {eventName} by spending {hourRequirement} creating projects, and you'll get to join 100+ likeminded <!-- TODO: check and update num of people -->
-		teenagers in {eventCity} to create something amazing!
-	</p>
+		<p>
+			Qualify for {eventName} by spending {hourRequirement} creating projects, and you'll get to join
+			100+ likeminded teenagers in {eventCity} to create something amazing!
+		</p>
 
-	<p>
-		Food, snacks, and travel will be fully funded, plus, there'll be some awesome swag there! Flight
-		stipends will be avalible too. The hackathon is open to anyone between <b>13 and 18 years old</b
-		>.
-	</p>
-</div>
-{:else if shownSection === "details"}
-<h1>Details go here</h1>
+		<p>
+			Food, snacks, and travel will be fully funded, plus, there'll be some awesome swag there!
+			Flight stipends will be avalible too. The hackathon is open to anyone between <b
+				>13 and 18 years old</b
+			>.
+		</p>
+	</div>
+{:else if shownSection === 'details'}
+	<div id="section">
+		<h2>Event Details</h2>
+		<p>
+			Horizons Crux is taking place from 10 July to 12 July 2026 at {venue}, {eventCity}. It's
+			completley free - no entry fees, free food, free snacks, and free merch!
+		</p>
+		<p></p>
+	</div>
 {/if}
 
 <style>
@@ -68,7 +86,7 @@
 		text-align: center;
 	}
 
-	#overview {
+	#section {
 		padding-left: 2em;
 	}
 
