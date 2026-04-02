@@ -41,8 +41,8 @@
 	>
 	<button
 		onclick={() => {
-			shownSection = 'details';
-		}}>Details</button
+			shownSection = 'qualify';
+		}}>Qualifying</button
 	>
 </nav>
 
@@ -50,7 +50,8 @@
 	<div id="section">
 		<h2>Overview: What is Horizons?</h2>
 		<p>
-			<a href="https://horizons.hackclub.com">Horizons</a> is a group of hackathons around the world. From July 10 to 12, join us in {eventCity} for
+			<a href="https://horizons.hackclub.com">Horizons</a> is a group of hackathons around the
+			world. From July 10 to 12, join us in {eventCity} for
 			{eventName}! <br />
 			Horizons is organised by
 			<a href="https://hackclub.com" referrerpolicy="no-referrer">Hack Club</a> (a 501(c)(3) nonprofit),
@@ -86,17 +87,18 @@
 		<p>
 			... and many more!
 			<br />
-			To learn more about Hack Club, visit the <a href="https://hackclub.com">main website</a> and <a href="https://hackclub.com/philosophy/">Hack Club Philosophy</a>.
+			To learn more about Hack Club, visit the <a href="https://hackclub.com">main website</a> and
+			<a href="https://hackclub.com/philosophy/">Hack Club Philosophy</a>.
 		</p>
 	</div>
-{:else if shownSection === 'details'}
+{:else if shownSection === 'qualify'}
 	<div id="section">
-		<h2>Event Details</h2>
+		<h2>Qualifying</h2>
 		<p>
-			Horizons Crux is taking place from 10 July to 12 July 2026 at {venue}, {eventCity}. It's
-			completley free - no entry fees, free food, free snacks, and free merch!
+			To qualify for {eventName}, you'll need to spend {hourRequirement} coding, and track that time on
+			<a href="https://hackatime.hackclub.com">Hackatime</a>
 		</p>
-		<p></p>
+		<p>If you need us to pay for flights, you'll need to spend additional hours coding.</p>
 	</div>
 {/if}
 
