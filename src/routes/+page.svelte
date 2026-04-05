@@ -47,6 +47,8 @@
 		>
 	</nav>
 
+	<img id="anchor" src="/assets/anchor&chain.PNG" alt="Anchor" />
+
 	{#if shownSection === 'overview'}
 		<div id="section">
 			<h2>Overview: What is Horizons?</h2>
@@ -108,6 +110,7 @@
 
 <style>
 	#hero {
+		color: lightgrey;
 		width: 100%;
 		aspect-ratio: 1920 / 1080;
 		text-align: center;
@@ -131,10 +134,54 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding-top: 2em;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		padding-left: 25%;
+		padding-top: 2em;
+	}
+
+	nav button {
+		background: rgba(0, 0, 0, 0);
+		color: white;
+		border: none;
+		padding: 0.75em 1.5em;
+		cursor: pointer;
+		font-size: 1em;
+		transition: all 0.3s ease;
+	}
+
+	nav button:hover {
+		background: rgba(255, 255, 255, 0.1);
+		transform: translateX(5px);
+	}
+
+	#anchor {
+		position: absolute;
+		left: 38%;
+		top: -10em;
+		transform: translateX(-50%) scale(0.6);
+		transform-origin: top center;
+		height: 80%;
+		width: auto;
+		z-index: 1;
 	}
 
 	#section {
+		color: white;
+		margin-left: 10%;
+		padding-right: 2em;
 		padding-left: 2em;
+		max-width: 26%;
+		z-index: 2;
+		position: relative;
 	}
 
 	#title h2 {
