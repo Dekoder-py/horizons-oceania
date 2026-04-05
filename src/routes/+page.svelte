@@ -33,79 +33,104 @@
 	<div class="down-arrow"></div>
 </div>
 
-<nav>
-	<button
-		onclick={() => {
-			shownSection = 'overview';
-		}}>Overview</button
-	>
-	<button
-		onclick={() => {
-			shownSection = 'qualify';
-		}}>Qualifying</button
-	>
-</nav>
+<div id="body">
+	<nav>
+		<button
+			onclick={() => {
+				shownSection = 'overview';
+			}}>Overview</button
+		>
+		<button
+			onclick={() => {
+				shownSection = 'qualify';
+			}}>Qualifying</button
+		>
+	</nav>
 
-{#if shownSection === 'overview'}
-	<div id="section">
-		<h2>Overview: What is Horizons?</h2>
-		<p>
-			<a href="https://horizons.hackclub.com">Horizons</a> is a group of hackathons around the
-			world. From July 10 to 12, join us in {eventCity} for
-			{eventName}! <br />
-			Horizons is organised by
-			<a href="https://hackclub.com" referrerpolicy="no-referrer">Hack Club</a> (a 501(c)(3) nonprofit),
-			by teenagers, for teenagers.
-		</p>
+	{#if shownSection === 'overview'}
+		<div id="section">
+			<h2>Overview: What is Horizons?</h2>
+			<p>
+				<a href="https://horizons.hackclub.com">Horizons</a> is a group of hackathons around the
+				world. From July 10 to 12, join us in {eventCity} for
+				{eventName}! <br />
+				Horizons is organised by
+				<a href="https://hackclub.com" referrerpolicy="no-referrer">Hack Club</a> (a 501(c)(3) nonprofit),
+				by teenagers, for teenagers.
+			</p>
 
-		<p>
-			Qualify for {eventName} by spending {hourRequirement} creating projects, and you'll get to join
-			100+ likeminded teenagers in {eventCity} to create something amazing!
-		</p>
+			<p>
+				Qualify for {eventName} by spending {hourRequirement} creating projects, and you'll get to join
+				100+ likeminded teenagers in {eventCity} to create something amazing!
+			</p>
 
-		<p>
-			Food, snacks, and travel will be fully funded, plus, there'll be some awesome swag there!
-			Flight stipends will be avalible too. The hackathon is open to anyone between <b
-				>13 and 18 years old</b
-			>.
-		</p>
+			<p>
+				Food, snacks, and travel will be fully funded, plus, there'll be some awesome swag there!
+				Flight stipends will be avalible too. The hackathon is open to anyone between <b
+					>13 and 18 years old</b
+				>.
+			</p>
 
-		<h3>What is Hack Club?</h3>
-		<p>
-			Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to
-			code and build projects. We’re the largest teen-led coding community, with over 50,000
-			students building projects with their friends in Hack Club each year.
-		</p>
-		<p>Some of our past events include:</p>
-		<ul>
-			<li>Juice: a 2-month game jam followed by a 7-day pop-up cafe in Shanghai, China</li>
-			<li>Undercity: a 4-day hardware hackathon in GitHub HQ, San Francisco</li>
-			<li>
-				Shiba: a 7-day pop-up arcade in Tokyo, Japan where teenagers built their own arcade machines
-			</li>
-		</ul>
-		<p>
-			... and many more!
-			<br />
-			To learn more about Hack Club, visit the <a href="https://hackclub.com">main website</a> and
-			<a href="https://hackclub.com/philosophy/">Hack Club Philosophy</a>.
-		</p>
-	</div>
-{:else if shownSection === 'qualify'}
-	<div id="section">
-		<h2>Qualifying</h2>
-		<p>
-			To qualify for {eventName}, you'll need to spend {hourRequirement} coding, and track that time on
-			<a href="https://hackatime.hackclub.com">Hackatime</a>
-		</p>
-		<p>If you need us to pay for flights, you'll need to spend additional hours coding.</p>
-	</div>
-{/if}
+			<h3>What is Hack Club?</h3>
+			<p>
+				Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn
+				to code and build projects. We’re the largest teen-led coding community, with over 50,000
+				students building projects with their friends in Hack Club each year.
+			</p>
+			<p>Some of our past events include:</p>
+			<ul>
+				<li>Juice: a 2-month game jam followed by a 7-day pop-up cafe in Shanghai, China</li>
+				<li>Undercity: a 4-day hardware hackathon in GitHub HQ, San Francisco</li>
+				<li>
+					Shiba: a 7-day pop-up arcade in Tokyo, Japan where teenagers built their own arcade
+					machines
+				</li>
+			</ul>
+			<p>
+				... and many more!
+				<br />
+				To learn more about Hack Club, visit the <a href="https://hackclub.com">main website</a> and
+				<a href="https://hackclub.com/philosophy/">Hack Club Philosophy</a>.
+			</p>
+		</div>
+	{:else if shownSection === 'qualify'}
+		<div id="section">
+			<h2>Qualifying</h2>
+			<p>
+				To qualify for {eventName}, you'll need to spend {hourRequirement} coding, and track that time
+				on
+				<a href="https://hackatime.hackclub.com">Hackatime</a>
+			</p>
+			<p>If you need us to pay for flights, you'll need to spend additional hours coding.</p>
+		</div>
+	{/if}
+</div>
 
 <style>
 	#hero {
-		height: 100vh;
+		width: 100%;
+		aspect-ratio: 1920 / 1080;
 		text-align: center;
+		background-image: url('/assets/hero_img.PNG');
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		position: relative;
+		padding-top: 2em;
+	}
+
+	#body {
+		width: 100%;
+		aspect-ratio: 1920 / 2301;
+		background-image: url('/assets/body_bg.PNG');
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
 	}
 
 	#section {
