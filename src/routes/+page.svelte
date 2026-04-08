@@ -45,6 +45,11 @@
 				shownSection = 'qualify';
 			}}>Qualifying</button
 		>
+		<button
+			onclick={() => {
+				shownSection = 'event-details';
+			}}>Event Details</button
+		>
 	</nav>
 
 	<img id="anchor" src="/assets/anchor&chain.PNG" alt="Anchor" />
@@ -113,6 +118,23 @@
 				using 30 hours to receive an invite to the event!.</p>
 			<p>You can also earn flight stipends by spending additional hours coding.</p>
 			<p> You can split the hours across multiple projects, or on one large one. It’s up to you! </p>
+		</div>
+	{/if}
+	{:else if shownSection === 'event-details'}
+		<div id="section">
+			<h2>Event Details</h2>
+			<p>
+				{eventName} will be held in {eventCity} from July 10 to 12, 2026. The venue is TBD
+			</p>
+			<h3>Logistics</h3>
+			<p>Participants are to arrive at the venue by 1:00 PM on July 10th and will depart at 5:00 PM on July 12th. 
+				Accomodation will be provided at the venue.</p>
+			<p> Food will be provided throughout the event, and there will be accomodation for all dietary restrictions. </p>
+			<p> Participants will sleep at the hackathon venue. They are advised to bring their own sleeping bags. </p>
+			<p> There will be background checked staff available for the duration of the event.</p>
+			<p> Closer to the date we will be hosting event calls to run you through how the event will run and answer any questions you may have.</p>
+			<h3>Are Parents allowed to come?</h3>
+			<p> Parents are not allowed to stay in the venue and will not be reimbursed for their stay or travel. Parents are free to check the venue before the event under the supervision of staff to make sure everything is safe for their child.</p>
 		</div>
 	{/if}
 </div>
