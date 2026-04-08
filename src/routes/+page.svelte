@@ -2,7 +2,7 @@
 	const eventCity = 'Sydney';
 	const eventName = 'Horizons Crux';
 	const venue = 'VENUE TBD';
-	const hours = 35;
+	const hours = 30;
 
 	let hourRequirement = hours + ' hours';
 
@@ -94,6 +94,12 @@
 				To learn more about Hack Club, visit the <a href="https://hackclub.com">main website</a> and
 				<a href="https://hackclub.com/philosophy/">Hack Club Philosophy</a>.
 			</p>
+			<h3>Team and Contact</h3>
+			<p>Horizons Crux is led by 8 teens from Australia and New Zealand!</p>
+			<p>
+				If you have any questions, feel free to reach out to us at
+				<a href="mailto:crux@horizons.hackclub.com">crux@horizons.hackclub.com</a>.
+			</p>
 		</div>
 	{:else if shownSection === 'qualify'}
 		<div id="section">
@@ -101,9 +107,12 @@
 			<p>
 				To qualify for {eventName}, you'll need to spend {hourRequirement} coding, and track that time
 				on
-				<a href="https://hackatime.hackclub.com">Hackatime</a>
+				<a href="https://hackatime.hackclub.com">Hackatime</a>.
 			</p>
-			<p>If you need us to pay for flights, you'll need to spend additional hours coding.</p>
+			<p>Purchase a Crux ticket from the <a href="https://horizons.hackclub.com/">Horizons shop</a> 
+				using 30 hours to receive an invite to the event!.</p>
+			<p>You can also earn flight stipends by spending additional hours coding.</p>
+			<p> You can split the hours across multiple projects, or on one large one. It’s up to you! </p>
 		</div>
 	{/if}
 </div>
