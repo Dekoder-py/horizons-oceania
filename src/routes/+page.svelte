@@ -50,6 +50,11 @@
 				shownSection = 'event-details';
 			}}>Event Details</button
 		>
+		<button
+			onclick={() => {
+				shownSection = 'travel';
+			}}>Travel</button
+		>
 	</nav>
 
 	<img id="anchor" src="/assets/anchor&chain.PNG" alt="Anchor" />
@@ -119,7 +124,6 @@
 			<p>You can also earn flight stipends by spending additional hours coding.</p>
 			<p> You can split the hours across multiple projects, or on one large one. It’s up to you! </p>
 		</div>
-	{/if}
 	{:else if shownSection === 'event-details'}
 		<div id="section">
 			<h2>Event Details</h2>
@@ -135,6 +139,16 @@
 			<p> Closer to the date we will be hosting event calls to run you through how the event will run and answer any questions you may have.</p>
 			<h3>Are Parents allowed to come?</h3>
 			<p> Parents are not allowed to stay in the venue and will not be reimbursed for their stay or travel. Parents are free to check the venue before the event under the supervision of staff to make sure everything is safe for their child.</p>
+		</div>
+	{:else if shownSection === 'travel'}
+		<div id="section">
+			<h2>Travel</h2>
+			<h3>Flight Stipends</h3>
+			<p> Flight stipends are available in the horizons shop at a rate of $8.5USD per hour spent coding. You can stack this as many times as needed in order to afford flight, visa and passport costs.</p>
+			<p> While the ticket to the event will be taken off the shop on the 9th of July, flight stipends will still be available for purchase until late August.</p>
+			<h3> Flying in and out of Sydney</h3>
+			<p>Sydney has one main airport -- Kingsford Smith Airport (SYD)</p>
+			
 		</div>
 	{/if}
 </div>
