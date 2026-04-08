@@ -55,6 +55,11 @@
 				shownSection = 'travel';
 			}}>Travel</button
 		>
+		<button
+			onclick={() => {
+				shownSection = 'parents';
+			}}>Parents Guide</button
+		>
 	</nav>
 
 	<img id="anchor" src="/assets/anchor&chain.PNG" alt="Anchor" />
@@ -148,6 +153,11 @@
 			<p> While the ticket to the event will be taken off the shop on the 9th of July, flight stipends will still be available for purchase until late August.</p>
 			<h3> Flying in and out of Sydney</h3>
 			<p>Sydney has one main airport -- Kingsford Smith Airport (SYD)</p>
+			
+		</div>
+	{:else if shownSection === 'parents'}
+		<div id="section">
+			<h2>Parents Guide</h2>
 			
 		</div>
 	{/if}
