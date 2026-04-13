@@ -13,9 +13,8 @@
 	<title>{eventName}</title>
 </svelte:head>
 
-<a href="https://hackclub.com/"
+<a href="https://hackclub.com/" id="hack-club-flag"
 	><img
-		style="position: absolute; top: 0; left: 10px; border: 0; width: 256px; z-index: 999;"
 		src="https://assets.hackclub.com/flag-orpheus-top.svg"
 		alt="Hack Club Flag"
 	/></a
@@ -164,13 +163,27 @@
 </div>
 
 <style>
+	#hack-club-flag {
+		position: absolute;
+		top: 0;
+		left: 10px;
+		border: 0;
+		z-index: 999;
+	}
+
+	#hack-club-flag img {
+		width: 256px;
+		height: auto;
+		display: block;
+	}
+
 	#hero {
 		color: lightgrey;
 		width: 100%;
 		aspect-ratio: 1920 / 1080;
 		text-align: center;
 		background-image: url('/assets/hero_img.PNG');
-		background-size: 100% 100%;
+		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 		display: flex;
@@ -179,20 +192,25 @@
 		align-items: center;
 		position: relative;
 		padding-top: 2em;
+		min-height: 60vh;
 	}
 
 	#body {
 		width: 100%;
 		aspect-ratio: 1920 / 2301;
-		background-image: url('/assets/body_bg.PNG');
-		background-size: 100% 100%;
-		background-position: center;
-		background-repeat: no-repeat;
 		position: relative;
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
 		padding-top: 2em;
+		background-image: url('/assets/body_bg.PNG');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	#body::before {
+		display: none;
 	}
 
 	nav {
@@ -201,6 +219,7 @@
 		gap: 1em;
 		padding-left: 25%;
 		padding-top: 2em;
+		flex-shrink: 0;
 	}
 
 	nav button {
@@ -211,6 +230,7 @@
 		cursor: pointer;
 		font-size: 1em;
 		transition: all 0.3s ease;
+		white-space: nowrap;
 	}
 
 	nav button:hover {
@@ -237,6 +257,8 @@
 		max-width: 26%;
 		z-index: 2;
 		position: relative;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
 	}
 
 	#title h2 {
@@ -280,6 +302,186 @@
 		}
 		100% {
 			margin-top: 0;
+		}
+	}
+
+	/* Mobile Responsive Design */
+	@media (max-width: 768px) {
+		#hack-club-flag {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 999;
+		}
+
+		#hack-club-flag img {
+			width: 120px;
+			height: auto;
+		}
+
+		#hero {
+			aspect-ratio: auto;
+			min-height: 50vh;
+			padding-top: 3em;
+			justify-content: center;
+		}
+
+		#title h1 {
+			font-size: 2em;
+		}
+
+		#title h2 {
+			font-size: 1.3em;
+		}
+
+		#subtitle {
+			font-size: 0.95em;
+		}
+
+		#caption {
+			font-size: 0.9em;
+			padding: 0 1em;
+		}
+
+		#body {
+			flex-direction: column;
+			padding-top: 1em;
+			align-items: center;
+			aspect-ratio: auto;
+			min-height: 100vh;
+			background-attachment: scroll;
+		}
+
+		nav {
+			width: 100%;
+			flex-direction: row;
+			gap: 0.5em;
+			padding-left: 0;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			justify-content: center;
+			flex-wrap: wrap;
+			order: -1;
+		}
+
+		nav button {
+			padding: 0.5em 1em;
+			font-size: 0.85em;
+			flex: 1;
+			min-width: 80px;
+			max-width: 150px;
+		}
+
+		nav button:hover {
+			transform: translateX(0);
+			background: rgba(255, 255, 255, 0.15);
+		}
+
+		#anchor {
+			display: none;
+		}
+
+		#section {
+			margin-left: 0;
+			max-width: 100%;
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		#section h2 {
+			font-size: 1.5em;
+			margin-top: 0.5em;
+		}
+
+		#section h3 {
+			font-size: 1.15em;
+		}
+
+		#section p {
+			font-size: 0.95em;
+			line-height: 1.5;
+		}
+
+		#section ul,
+		#section ol {
+			font-size: 0.95em;
+			padding-left: 1.5em;
+		}
+
+		.down-arrow {
+			display: none;
+		}
+	}
+
+	@media (max-width: 480px) {
+		#hack-club-flag img {
+			width: 100px;
+			height: auto;
+		}
+
+		#title h1 {
+			font-size: 1.5em;
+		}
+
+		#title h2 {
+			font-size: 1.1em;
+		}
+
+		#subtitle {
+			font-size: 0.85em;
+		}
+
+		#caption {
+			font-size: 0.8em;
+		}
+
+		nav button {
+			padding: 0.4em 0.8em;
+			font-size: 0.75em;
+			min-width: 70px;
+		}
+
+		#section {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+
+		#section h2 {
+			font-size: 1.2em;
+		}
+
+		#section h3 {
+			font-size: 1em;
+		}
+
+		#section p {
+			font-size: 0.9em;
+		}
+	}
+
+	@media (min-width: 769px) and (max-width: 1024px) {
+		#hack-club-flag img {
+			width: 180px;
+			height: auto;
+		}
+
+		nav {
+			padding-left: 15%;
+		}
+
+		#section {
+			max-width: 40%;
+			margin-left: 5%;
+		}
+
+		#hero {
+			aspect-ratio: 16 / 9;
+		}
+
+		#body {
+			aspect-ratio: 1920 / 2301;
 		}
 	}
 </style>
