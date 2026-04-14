@@ -220,6 +220,8 @@
 		padding-left: 25%;
 		padding-top: 2em;
 		flex-shrink: 0;
+		z-index: 10;
+		position: relative;
 	}
 
 	nav button {
