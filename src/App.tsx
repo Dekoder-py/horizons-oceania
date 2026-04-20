@@ -18,7 +18,7 @@ function App() {
       </a>
 
       <div id="hero">
-        <img src="/logo.png" height={450} />{" "}
+        <img src="/logo_white_bg.png" height={450} />{" "}
         <p id="subtitle">{eventCity} | July 10 - 12, 2026</p>
         <p id="caption">
           Hackathons around the world. For high schoolers, by high schoolers.
