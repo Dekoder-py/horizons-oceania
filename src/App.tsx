@@ -32,7 +32,7 @@ function App() {
           hackathons around the world. From July 10 to 12, join us in{" "}
           {eventCity} for
           {eventName}! <br />
-          Horizons is organised by
+          Horizons is organised by {" "}
           <a href="https://hackclub.com" referrerPolicy="no-referrer">
             Hack Club
           </a>{" "}
@@ -76,13 +76,13 @@ function App() {
           ... and many more!
           <br />
           To learn more about Hack Club, visit the{" "}
-          <a href="https://hackclub.com">main website</a> and
+          <a href="https://hackclub.com">main website</a> and {" "}
           <a href="https://hackclub.com/philosophy/">Hack Club Philosophy</a>.
         </p>
         <h3>Team and Contact</h3>
         <p>Horizons Crux is led by 8 teens from Australia and New Zealand!</p>
         <p>
-          If you have any questions, feel free to reach out to us at
+          If you have any questions, feel free to reach out to us at {" "}
           <a href="mailto:crux@horizons.hackclub.com">
             crux@horizons.hackclub.com
           </a>
