@@ -31,7 +31,7 @@ function App() {
         <p>
           <a href="https://horizons.hackclub.com">Horizons</a> is a group of
           hackathons around the world. From July 10 to 12, join us in{" "}
-          {eventCity} for
+          {eventCity} for {" "}
           {eventName}! <br />
           Horizons is organised by {" "}
           <a href="https://hackclub.com" referrerPolicy="no-referrer">
