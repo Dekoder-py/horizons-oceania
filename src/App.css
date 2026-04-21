@@ -26,7 +26,7 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  padding-top: 2em;
+  padding-top: 9rem;
 }
 
 #about {
@@ -107,7 +107,7 @@
   #hero {
     aspect-ratio: auto;
     min-height: 50vh;
-    padding-top: 3em;
+    padding-top: 6.5rem;
     justify-content: center;
   }
 
