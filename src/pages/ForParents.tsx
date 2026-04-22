@@ -51,11 +51,11 @@ export default function ForParents() {
           anything:
         </p>
         <ul>
-          <li>✈️ Flight stipends to help cover travel costs</li>
-          <li>🏨 Accommodation</li>
-          <li>🍽️ All meals and snacks</li>
-          <li>🚐 Local transportation</li>
-          <li>🎁 Event swag</li>
+          <li>Flight stipends to help cover travel costs</li>
+          <li>Accommodation</li>
+          <li>All meals and snacks</li>
+          <li>Local transportation</li>
+          <li>Event swag</li>
         </ul>
 
         <h3>Schedule & Timeline</h3>
@@ -69,6 +69,7 @@ export default function ForParents() {
         <h3>What Your Teen Needs to Bring</h3>
         <ul>
           <li>Laptop and charger</li>
+          <li>A Sleeping Bag</li>
           <li>Passport (for international travel)</li>
           <li>Comfortable clothing for Sydney's winter</li>
           <li>Any necessary medications</li>

@@ -41,11 +41,11 @@ export default function EventDetails() {
 
         <h3>What's Provided</h3>
         <ul>
-          <li>✨ All meals and snacks (breakfast, lunch, dinner, snacks)</li>
-          <li>🛏️ Accommodation for out-of-town participants</li>
-          <li>✈️ Flight stipends to cover travel costs</li>
-          <li>🎁 Exclusive Horizons Crux swag</li>
-          <li>🏆 Awards and recognition</li>
+          <li>All meals and snacks (breakfast, lunch, dinner, snacks)</li>
+          <li>Accommodation during the event</li>
+          <li>Flight stipends to cover travel costs</li>
+          <li>Exclusive Horizons Crux swag and prizes</li>
+          <li>Fame and Glory</li>
         </ul>
 
         <h3>Questions?</h3>

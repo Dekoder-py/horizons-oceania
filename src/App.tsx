@@ -75,8 +75,12 @@ function App() {
             <h2>Sponsors & Partners</h2>
             <p>Coming soon - Meet our amazing sponsors</p>
             <hr style={{ margin: '2rem 0', borderColor: 'rgba(185, 255, 255, 0.2)' }} />
-            <p>Made with ❤️ by the Horizons Crux team</p> { /* TODO: add names */ }
-            <p>&copy; 2026 Horizons Crux. A Hack Club event.</p>
+            <h2>
+              A project by Hack Club
+              <br></br>
+              With love from the Crux team.
+            </h2> { /* TODO: add names */ }
+            <p>Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. We believe you learn best by building so we're creating community and providing grants so you can make awesome projects. In the past few years, we've partnered with NASA to run <a href="https://stardance.space">Summer of Making</a>, hosted the <a href="https://github.com/hackclub/the-hacker-zephyr">world's longest hackathon on land</a>, and ran <a href="https://www.youtube.com/watch?v=QvCoISXfcE8">Canada's largest high school hackathon.</a></p>
             <p>For more info, visit <a href="https://hackclub.com">Hack Club</a></p>
           </div>
         </footer>
