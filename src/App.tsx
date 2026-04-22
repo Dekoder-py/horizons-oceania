@@ -41,7 +41,7 @@ function App() {
             <h1 id="hero-title">
               Build bold projects for free,
               <br />
-              at Horizons Oceania 2026
+              at Horizons Crux
             </h1>
             <p id="caption">Solo or in teams, for high school students ages 13-18.</p>
             <div id="hero-signup-strip" role="group" aria-label="Sign up for Horizons">
