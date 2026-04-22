@@ -41,6 +41,12 @@
   color: #fff6ed;
 }
 
+#main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 #hero {
   color: #f5f6fb;
   box-sizing: border-box;
@@ -194,41 +200,65 @@
   outline-offset: 4px;
 }
 
-#about-section {
-  position: relative;
-  overflow: hidden;
+#content-wrapper {
+  flex: 1;
   width: 100%;
-  min-height: calc(100vw * 2301 / 1920);
-  text-align: left;
-  color: #e9f7ff;
-  background: linear-gradient(180deg, #69d8f1 0%, #0f5fb3 34%, #081b4a 100%);
+  background: linear-gradient(180deg, #0f5fb3 0%, #0f5fb3 34%, #081b4a 100%);
 }
 
-#about-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("/assets/body_bg.PNG");
-  background-size: 100% auto;
-  background-position: top center;
-  background-repeat: no-repeat;
-  pointer-events: none;
+#about-section {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  color: #e9f7ff;
 }
 
 #about {
-  position: relative;
-  z-index: 1;
   max-width: 760px;
   margin: 0 auto;
   padding: 4rem 1.5rem 5rem;
 }
 
-#about p,
-#about h2,
-#about h3,
-#about ul {
-  margin-left: auto;
-  margin-right: auto;
+#page-footer {
+  width: 100%;
+  position: relative;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: #e9f7ff;
+  background-image: url("/assets/body_bg.PNG");
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-top: 1px solid rgba(185, 255, 255, 0.2);
+}
+
+#page-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 27, 74, 0.85);
+  pointer-events: none;
+}
+
+#footer-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+#page-footer h2 {
+  color: #b9ffff;
+  margin-bottom: 2rem;
+}
+
+#page-footer a {
+  color: #b9ffff;
+  text-decoration: none;
+}
+
+#page-footer a:hover {
+  color: #ff72d8;
 }
 
 #about h2 {
@@ -260,6 +290,16 @@
 
 #about li {
   margin-bottom: 0.75rem;
+}
+
+#about p,
+#about h2,
+#about h3,
+#footer-content p,
+#footer-content h2,
+#footer-content a {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
