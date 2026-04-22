@@ -228,7 +228,7 @@
   position: relative;
   padding-top: 4rem;
   text-align: center;
-  color: #e9f7ff;
+  color: #000000;
   background-image: url("/assets/body_bg.PNG");
   background-size: 100% auto;
   background-position: top center;
@@ -247,17 +247,17 @@
 }
 
 #page-footer h2 {
-  color: #b9ffff;
+  color: #000000;
   margin-bottom: 2rem;
 }
 
 #page-footer a {
-  color: #b9ffff;
+  color: #000000;
   text-decoration: none;
 }
 
 #page-footer a:hover {
-  color: #ff72d8;
+  color: #333333;
 }
 
 #about h2 {
