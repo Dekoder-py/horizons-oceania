@@ -4,6 +4,20 @@ html, body, #root {
   padding: 0;
 }
 
+html {
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* :root { */
 /*   --text: #6b6375; */
 /*   --text-h: #08060d; */
