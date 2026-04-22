@@ -2,7 +2,6 @@ import "../App.css";
 
 export default function Home() {
   const eventCity = "Sydney";
-  const eventName = "Horizons Crux";
 
   return (
     <div id="hero">
