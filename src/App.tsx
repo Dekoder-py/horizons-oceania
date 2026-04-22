@@ -75,7 +75,8 @@ function App() {
             <h2>Sponsors & Partners</h2>
             <p>Coming soon - Meet our amazing sponsors</p>
             <hr style={{ margin: '2rem 0', borderColor: 'rgba(185, 255, 255, 0.2)' }} />
-            <p>&copy; 2026 Horizons Oceania. A Hack Club event.</p>
+            <p>Made with ❤️ by the Horizons Crux team</p> { /* TODO: add names */ }
+            <p>&copy; 2026 Horizons Crux. A Hack Club event.</p>
             <p>For more info, visit <a href="https://hackclub.com">Hack Club</a></p>
           </div>
         </footer>
