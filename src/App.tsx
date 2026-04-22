@@ -1,15 +1,16 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.tsx";
+import About from "./pages/About.tsx";
+import Qualifying from "./pages/Qualifying.tsx";
+import EventDetails from "./pages/EventDetails.tsx";
+import Travel from "./pages/Travel.tsx";
+import ForParents from "./pages/ForParents.tsx";
 
 function App() {
-  const eventCity = "Sydney";
-  const eventName = "Horizons Crux";
-  const hours = 30;
-
-  let hourRequirement = hours + " hours";
 
   return (
-    <>
+    <Router>
       <a href="https://hackclub.com/" id="hack-club-flag">
         <img
           src="https://assets.hackclub.com/flag-orpheus-top.svg"
@@ -17,90 +18,57 @@ function App() {
         />
       </a>
 
-      <NavBar />
+      <a
+        id="hero-get-started-btn"
+        href="https://horizons.hackclub.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Get Started
+      </a>
+
       <div id="hero">
-        <p id="subtitle">{eventCity} | July 10 - 12, 2026</p>
-        <p id="caption">
-          Hackathons around the world. For high schoolers, by high schoolers.
-        </p>
-        <a
-          id="hero-signup-button"
-          href="https://horizons.hackclub.com/crux"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Sign Up Now
-        </a>
-      </div>
-
-      <div id="about-section">
-        <div id="about">
-          <h2>About</h2>
-          <p>
-            <a href="https://horizons.hackclub.com">Horizons</a> is a group of
-            hackathons around the world. From July 10 to 12, join us in{" "}
-            {eventCity} for {" "}
-            {eventName}! <br />
-            Horizons is organised by {" "}
-            <a href="https://hackclub.com" referrerPolicy="no-referrer">
-              Hack Club
-            </a>{" "}
-            (a 501(c)(3) nonprofit), by teenagers, for teenagers.
-          </p>
-
-          <p>
-            Qualify for {eventName} by spending {hourRequirement} creating
-            projects, and you'll get to join 100+ likeminded teenagers in{" "}
-            {eventCity} to create something amazing!
-          </p>
-
-          <p>
-            Food, snacks, and travel will be fully funded, plus, there'll be some
-            awesome swag there! Flight stipends will be avalible too. The
-            hackathon is open to anyone between <b>13 and 18 years old</b>.
-          </p>
-
-          <h3>What is Hack Club?</h3>
-          <p>
-            Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high
-            school students learn to code and build projects. We’re the largest
-            teen-led coding community, with over 50,000 students building projects
-            with their friends in Hack Club each year.
-          </p>
-          <p>Some of our past events include:</p>
-          <ul>
-            <li>
-              Juice: a 2-month game jam followed by a 7-day pop-up cafe in
-              Shanghai, China
-            </li>
-            <li>
-              Undercity: a 4-day hardware hackathon in GitHub HQ, San Francisco
-            </li>
-            <li>
-              Shiba: a 7-day pop-up arcade in Tokyo, Japan where teenagers built
-              their own arcade machines
-            </li>
-          </ul>
-          <p>
-            ... and many more!
+        <div id="hero-content">
+          <div id="hero-logo-wrapper">
+            <img
+              src="/logo.png"
+              alt="Horizons Crux"
+              id="hero-logo"
+            />
+          </div>
+          <p id="subtitle">Start now to join us in Sydney, July 10-12</p>
+          <h1 id="hero-title">
+            Build bold projects for free,
             <br />
-            To learn more about Hack Club, visit the{" "}
-            <a href="https://hackclub.com">main website</a> and {" "}
-            <a href="https://hackclub.com/philosophy/">Hack Club Philosophy</a>.
-          </p>
-          <h3>Team and Contact</h3>
-          <p>Horizons Crux is led by 8 teens from Australia and New Zealand!</p>
-          <p>
-            If you have any questions, feel free to reach out to us at {" "}
-            <a href="mailto:crux@horizons.hackclub.com">
-              crux@horizons.hackclub.com
+            at Horizons Oceania 2026
+          </h1>
+          <p id="caption">Solo or in teams, for high school students ages 13-18.</p>
+          <div id="hero-signup-strip" role="group" aria-label="Sign up for Horizons">
+            <span id="hero-signup-text">horizons@hackclub.com</span>
+            <a
+              id="hero-signup-button"
+              href="https://horizons.hackclub.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Start Now
             </a>
-            .
-          </p>
+          </div>
         </div>
       </div>
-    </>
+
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/qualifying" element={<Qualifying />} />
+        <Route path="/event-details" element={<EventDetails />} />
+        <Route path="/travel" element={<Travel />} />
+        <Route path="/for-parents" element={<ForParents />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
