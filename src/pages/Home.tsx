@@ -24,7 +24,7 @@ export default function Home() {
           <span id="hero-signup-text">horizons@hackclub.com</span>
           <a
             id="hero-signup-button"
-            href="https://horizons.hackclub.com"
+            href="https://horizons.hackclub.com/crux"
             target="_blank"
             rel="noreferrer"
           >
