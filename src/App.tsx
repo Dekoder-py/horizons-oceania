@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar.tsx";
 function App() {
   const eventCity = "Sydney";
   const eventName = "Horizons Crux";
-  const venue = "VENUE TBD";
   const hours = 30;
 
   let hourRequirement = hours + " hours";
@@ -24,6 +23,14 @@ function App() {
         <p id="caption">
           Hackathons around the world. For high schoolers, by high schoolers.
         </p>
+        <a
+          id="hero-signup-button"
+          href="https://horizons.hackclub.com/crux"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Sign Up Now
+        </a>
       </div>
 
       <div id="about-section">
