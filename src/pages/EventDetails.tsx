@@ -8,11 +8,7 @@ export default function EventDetails() {
 
         <h3>Date & Location</h3>
         <p>
-          <b>When:</b> July 10-12, 2026 (3 days)
-          <br />
-          <b>Where:</b> Sydney, Australia
-          <br />
-          <b>Age:</b> 13-18 years old
+          Horizons Crux will take place in Sydney, Australia on July 10-12. Exact venue address will be released at a later date
         </p>
 
         <h3>What to Expect</h3>
@@ -32,11 +28,10 @@ export default function EventDetails() {
 
         <h3>Schedule</h3>
         <p>
-          <b>July 10:</b> Welcome & Project Planning
-          <br />
+          <b>July 10:</b> Welcome & Project Start
           <b>July 11:</b> Building Day (Full Day)
           <br />
-          <b>July 12:</b> Final Presentations & Celebration
+          <b>July 12:</b> Voting + Closing Ceremony
         </p>
 
         <h3>What's Provided</h3>
