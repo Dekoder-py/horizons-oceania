@@ -110,7 +110,7 @@ function App() {
             <hr style={{ margin: '2rem 0', borderColor: 'rgba(185, 255, 255, 0.2)' }} />
             
             <h2>With love from the Horizons team.</h2>
-            <p>Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. We believe you learn best by building so we're creating community and providing grants so you can make awesome projects. In the past few years, we've partnered with Nasa to run <a href="stardance.space">Stardance</a>, hosted <a href="https://github.com/hackclub/the-hacker-zephyr">the world's longest hackathon on land</a>, and ran <a href="kiwihacks.com">New Zealand's largest high school hackathon</a>.</p>=
+            <p>Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. We believe you learn best by building so we're creating community and providing grants so you can make awesome projects. In the past few years, we've partnered with Nasa to run <a href="stardance.space">Stardance</a>, hosted <a href="https://github.com/hackclub/the-hacker-zephyr">the world's longest hackathon on land</a>, and ran <a href="kiwihacks.com">New Zealand's largest high school hackathon</a>.</p>
             <div id="footer-link-columns">
               <div>
                 <h2>Hack club</h2>
