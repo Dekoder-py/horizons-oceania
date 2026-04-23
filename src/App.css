@@ -290,7 +290,7 @@ p {
 
 #page-footer a {
   color: #000000;
-  text-decoration: none;
+  text-decoration: wavy underline;
 }
 
 #sponsors-box {
@@ -355,7 +355,7 @@ p {
 
 
 #about h3 {
-  color: #ff72d8;
+  color: #000343;
 }
 
 #about a {

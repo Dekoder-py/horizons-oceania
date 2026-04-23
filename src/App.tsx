@@ -107,7 +107,7 @@ function App() {
               <p>Coming soon - Meet our amazing sponsors</p>
               <div id="sponsors-slot" aria-label="Sponsor logos and links" />
             </div>
-            <hr style={{ margin: '2rem 0', borderColor: 'rgba(185, 255, 255, 0.2)' }} />
+            <hr style={{ margin: '2rem', borderColor: 'rgb(0, 30, 140)', height: '5px'}} />
             
             <h2>With love from the Horizons team.</h2>
             <p>Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. We believe you learn best by building so we're creating community and providing grants so you can make awesome projects. In the past few years, we've partnered with Nasa to run <a href="stardance.space">Stardance</a>, hosted <a href="https://github.com/hackclub/the-hacker-zephyr">the world's longest hackathon on land</a>, and ran <a href="kiwihacks.com">New Zealand's largest high school hackathon</a>.</p>
