@@ -6,6 +6,60 @@ import Qualifying from "./pages/Qualifying.tsx";
 import EventDetails from "./pages/EventDetails.tsx";
 import Travel from "./pages/Travel.tsx";
 import ForParents from "./pages/ForParents.tsx";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
+function HeroSection() {
+  const location = useLocation();
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const nextEmail = searchParams.get("email") ?? searchParams.get("email_address") ?? "";
+    setEmail(nextEmail);
+  }, [location.search]);
+
+  return (
+    <div id="hero">
+      <div id="hero-content">
+        <div id="hero-logo-wrapper">
+          <img
+            src="https://file.garden/aOD6skM02SFxAOxK/IMG_5319.png"
+            alt="Horizons Crux"
+            id="hero-logo"
+          />
+        </div>
+        <p id="subtitle">Start now to join us in Sydney, July 10-12</p>
+        <h1 id="hero-title">
+          Build bold projects, Win awesome prizes
+          <br />
+          at Horizons Crux
+        </h1>
+        <p id="caption">Solo or in teams, for high school students ages 13-18.</p>
+        <div id="hero-signup-strip" role="group" aria-label="Sign up for Horizons">
+          <input
+            id="hero-signup-text"
+            type="email"
+            name="email"
+            placeholder="horizons@hackclub.com"
+            aria-label="Email address"
+            autoComplete="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+          />
+          <a
+            id="hero-signup-button"
+            href="https://horizons.hackclub.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Start Now
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function App() {
 
@@ -28,35 +82,7 @@ function App() {
       </a>
 
       <div id="main-wrapper">
-        <div id="hero">
-          <div id="hero-content">
-            <div id="hero-logo-wrapper">
-              <img
-                src="https://file.garden/aOD6skM02SFxAOxK/IMG_5319.png"
-                alt="Horizons Crux"
-                id="hero-logo"
-              />
-            </div>
-            <p id="subtitle">Start now to join us in Sydney, July 10-12</p>
-            <h1 id="hero-title">
-              Build bold projects, Win awesome prizes
-              <br />
-              at Horizons Crux
-            </h1>
-            <p id="caption">Solo or in teams, for high school students ages 13-18.</p>
-            <div id="hero-signup-strip" role="group" aria-label="Sign up for Horizons">
-              <span id="hero-signup-text">orpheus@hackclub.com</span>
-              <a
-                id="hero-signup-button"
-                href="https://horizons.hackclub.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Start Now
-              </a>
-            </div>
-          </div>
-        </div>
+        <HeroSection />
 
         <NavBar />
 
