@@ -38,8 +38,6 @@ function HeroSection() {
         <p id="subtitle">Start now to join us in Sydney, July 10-12</p>
         <h1 id="hero-title">
           Build bold projects, Win awesome prizes
-          <br />
-          at Horizons Crux
         </h1>
         <p id="caption">Solo or in teams, for high school students ages 13-18.</p>
         <form id="hero-signup-strip" aria-label="Sign up for Horizons" onSubmit={handleSignupSubmit}>
