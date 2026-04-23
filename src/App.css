@@ -49,6 +49,11 @@
   flex-direction: column;
 }
 
+p {
+  font-size: large;
+}
+
+
 #hero {
   color: #f5f6fb;
   box-sizing: border-box;
@@ -115,20 +120,21 @@
   font-size: clamp(1.2rem, 2.2vw, 2rem);
   font-weight: 500;
   letter-spacing: 0.03em;
-  background: rgba(41, 67, 126, 0.72);
+  paint-order: stroke fill;
   padding: 0.4rem 1rem;
   display: inline-block;
   border-radius: 8px;
+  color: black;
 }
 
 #hero-title {
   margin: 0.8rem 0 0.9rem;
-  color: #ffffff;
+  color: #000000;
   line-height: 0.98;
   letter-spacing: -0.02em;
   font-size: clamp(1.8rem, 5vw, 4rem);
   text-wrap: balance;
-  background: rgba(41, 67, 126, 0.72);
+  paint-order: stroke fill;
   padding: 0.5rem 1rem;
   display: inline-block;
   border-radius: 10px;
@@ -139,10 +145,11 @@
   font-size: clamp(1rem, 2.4vw, 2rem);
   font-weight: 500;
   opacity: 0.96;
-  background: rgba(41, 67, 126, 0.72);
+  paint-order: stroke fill;
   padding: 0.4rem 1rem;
   display: inline-block;
   border-radius: 8px;
+  color: black;
 }
 
 #hero-signup-strip {
@@ -243,10 +250,18 @@
 
 #footer-content {
   position: relative;
+  text-align: left;
   z-index: 1;
   max-width: 760px;
   margin: 0 auto;
   padding: 0 1.5rem 5rem;
+}
+
+#footer-content p {
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
+}
+#footer-content a {
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
 }
 
 #page-footer h2 {
@@ -257,6 +272,33 @@
 #page-footer a {
   color: #000000;
   text-decoration: none;
+}
+
+#sponsors-box {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  background: rgba(69, 69, 69, 0.839);
+  padding: 1.25rem;
+  margin: 0 0 1.6rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  color: white;
+  text-align: center;
+}
+
+#sponsors-box h1 {
+  margin: 0 0 0.55rem;
+}
+
+#sponsors-box p {
+  margin: 0;
+}
+
+#sponsors-slot {
+  margin-top: 1rem;
+  min-height: 90px;
+  border: 1px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #footer-link-columns {
@@ -280,6 +322,7 @@
 #footer-link-columns a {
   display: inline-block;
   width: fit-content;
+  text-align: left;
 }
 
 #page-footer a:hover {
@@ -425,6 +468,14 @@
       url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='4' seed='2'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='200' height='200' fill='%230f5fb3' filter='url(%23noise)' opacity='0.2'/%3E%3C/svg%3E");
     background-size: 200px 200px;
     background-repeat: repeat;
+  }
+
+  #sponsors-box {
+    padding: 1rem;
+  }
+
+  #sponsors-slot {
+    min-height: 72px;
   }
 
   #footer-link-columns {

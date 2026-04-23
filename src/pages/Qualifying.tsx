@@ -37,7 +37,7 @@ export default function Qualifying() {
 
         <h3>Important Dates</h3>
         <p>
-          <b>Deadline for buying your ticket to Crux:</b> July 5th
+          <b>50% of your hours(17.5 hours) need to be completed by:</b> July 5th, 2026
           <br />
           <b>Event:</b> July 10-12, 2026 (in Sydney!)
         </p>

@@ -32,7 +32,7 @@ function App() {
           <div id="hero-content">
             <div id="hero-logo-wrapper">
               <img
-                src="/logo.png"
+                src="https://file.garden/aOD6skM02SFxAOxK/IMG_5319.png"
                 alt="Horizons Crux"
                 id="hero-logo"
               />
@@ -72,8 +72,11 @@ function App() {
 
         <footer id="page-footer">
           <div id="footer-content">
-            <h2>Sponsors & Partners</h2>
-            <p>Coming soon - Meet our amazing sponsors</p>
+            <h1>Sponsors & Partners</h1>
+            <div id="sponsors-box">
+              <p>Coming soon - Meet our amazing sponsors</p>
+              <div id="sponsors-slot" aria-label="Sponsor logos and links" />
+            </div>
             <hr style={{ margin: '2rem 0', borderColor: 'rgba(185, 255, 255, 0.2)' }} />
             
             <h2>With love from the Horizons team.</h2>
