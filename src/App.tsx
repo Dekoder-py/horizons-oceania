@@ -12,12 +12,18 @@ import { useLocation } from "react-router-dom";
 function HeroSection() {
   const location = useLocation();
   const [email, setEmail] = useState("");
+  const signupHref = `https://horizons.hackclub.com/?utm_source=crux&email=${encodeURIComponent(email)}`;
 
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const nextEmail = searchParams.get("email") ?? searchParams.get("email_address") ?? "";
     setEmail(nextEmail);
   }, [location.search]);
+
+  const handleSignupSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    window.open(signupHref, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div id="hero">
@@ -36,7 +42,7 @@ function HeroSection() {
           at Horizons Crux
         </h1>
         <p id="caption">Solo or in teams, for high school students ages 13-18.</p>
-        <div id="hero-signup-strip" role="group" aria-label="Sign up for Horizons">
+        <form id="hero-signup-strip" aria-label="Sign up for Horizons" onSubmit={handleSignupSubmit}>
           <input
             id="hero-signup-text"
             type="email"
@@ -47,15 +53,13 @@ function HeroSection() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />
-          <a
+          <button
             id="hero-signup-button"
-            href={`https://horizons.hackclub.com/?utm_source=crux&email=${encodeURIComponent(email)}`}
-            target="_blank"
-            rel="noreferrer"
+            type="submit"
           >
             Start Now
-          </a>
-        </div>
+          </button>
+        </form>
       </div>
     </div>
   );
@@ -135,4 +139,3 @@ function App() {
 }
 
 export default App;
-
