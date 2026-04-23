@@ -39,7 +39,7 @@ function App() {
             </div>
             <p id="subtitle">Start now to join us in Sydney, July 10-12</p>
             <h1 id="hero-title">
-              Build bold projects for free,
+              Build bold projects, Win awesome prizes
               <br />
               at Horizons Crux
             </h1>
