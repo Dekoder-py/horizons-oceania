@@ -21,7 +21,7 @@ export default function Home() {
           role="group"
           aria-label="Sign up for Horizons"
         >
-          <span id="hero-signup-text">horizons@hackclub.com</span>
+          <span id="hero-signup-text">orpheus@hackclub.com</span>
           <a
             id="hero-signup-button"
             href="https://horizons.hackclub.com/crux"

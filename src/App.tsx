@@ -45,7 +45,7 @@ function App() {
             </h1>
             <p id="caption">Solo or in teams, for high school students ages 13-18.</p>
             <div id="hero-signup-strip" role="group" aria-label="Sign up for Horizons">
-              <span id="hero-signup-text">horizons@hackclub.com</span>
+              <span id="hero-signup-text">orpheus@hackclub.com</span>
               <a
                 id="hero-signup-button"
                 href="https://horizons.hackclub.com"
