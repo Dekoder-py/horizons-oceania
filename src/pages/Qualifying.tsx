@@ -6,53 +6,40 @@ export default function Qualifying() {
       <div id="about">
         <h2>How to Qualify</h2>
         <p>
-          To qualify for Horizons Crux, you need to spend <b>30 hours</b>{" "}
-          creating projects on{" "}
-          <a href="https://hackclub.com">Hack Club</a>.
+          Participants can qualify for Horizons Crux by obtaining a ticket from{" "}
+          <a href="https://horizons.hackclub.com" target="_blank">
+            Horizons
+          </a>
+          , a Hack Club program.
         </p>
 
         <h3>Steps to Qualify:</h3>
         <ol>
+          <li>Sign up for an account on Horizons</li>
           <li>
-            <b>Join Hack Club:</b> Visit{" "}
-            <a href="https://hackclub.com">hackclub.com</a> and create an
-            account
+            Create a project and set up Hackatime to track the time you spend
+            working on your project.
           </li>
           <li>
-            <b>Start Building:</b> Create projects and upload them to Hack Club
+            Spend 35 hours making any software or hardware projects. You can
+            “ship” anytime to get payouts and feedback!
           </li>
           <li>
-            <b>Track Your Hours:</b> Your building time will be automatically
-            tracked
-          </li>
-          <li>
-            <b>Reach 30 Hours:</b> Once you accumulate 30 hours, you'll be
-            eligible to apply
-          </li>
-          <li>
-            <b>Apply:</b> Submit your application at{" "}
-            <a href="https://horizons.hackclub.com/crux">
-              horizons.hackclub.com/crux
-            </a>
+            Purchase a Horizons Crux Ticket in the shop for 35 hours to earn an
+            invite to Horizons Crux!
           </li>
         </ol>
 
-        <h3>What Counts as Building Time?</h3>
-        <p>Any time spent creating projects on Hack Club counts toward your 30 hours:</p>
-        <ul>
-          <li>Coding projects (web, mobile, games, etc.)</li>
-          <li>Design work</li>
-          <li>Creative projects</li>
-          <li>Learning while building</li>
-        </ul>
+        <p>
+          You can split the hours on multiple projects and there is no limit to
+          the amount of projects you can make.
+        </p>
 
         <h3>Important Dates</h3>
         <p>
-          <b>Qualifying Period:</b> Now through June 30, 2026
+          <b>Deadline for buying your ticket to Crux:</b> July 5th
           <br />
-          <b>Application Deadline:</b> June 30, 2026
-          <br />
-          <b>Event:</b> July 10-12, 2026 in Sydney
+          <b>Event:</b> July 10-12, 2026 (in Sydney!)
         </p>
       </div>
     </div>
