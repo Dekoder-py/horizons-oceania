@@ -14,16 +14,22 @@ export default function Travel() {
 
         <h3>Flight Stipends</h3>
         <p>
-          We provide flight stipends to help cover your travel costs! The exact
-          amount will be determined based on your location, but we're committed
-          to making attendance affordable for everyone.
+          Participants can earn flight stipends at a rate of $8.5USD/hr in the
+          horizons shop. They can stack this as many times as needed to afford
+          flight, visa and passport costs.
+        </p>
+
+        <p>
+          While the ticket to Horizons Crux will be taken off the shop on July
+          6th, Participants can continue to work towards stipends until late
+          August (exact dates TBA).
         </p>
 
         <h3>Arrival</h3>
         <ul>
           <li>
             <b>Sydney Airport (SYD):</b> The main international airport. Direct
-            flights available from many cities worldwide
+            flights are available from many cities worldwide
           </li>
           <li>
             <b>Check-in:</b> July 9 or early July 10
@@ -34,20 +40,14 @@ export default function Travel() {
           </li>
         </ul>
 
-        <h3>Accommodation</h3>
-        <p>
-          All accommodation is fully covered for out-of-town participants.
-          We'll provide details about your accommodation once you're confirmed
-          as an attendee.
-        </p>
-
         <h3>Departure</h3>
         <ul>
           <li>
             <b>Checkout:</b> July 12 or July 13
           </li>
           <li>
-            <b>Transport:</b> We'll arrange transportation back to Sydney Airport
+            <b>Transport:</b> We'll arrange transportation back to Sydney
+            Airport
           </li>
         </ul>
 
@@ -65,13 +65,17 @@ export default function Travel() {
             website for visa requirements
           </li>
           <li>Apply early if needed - visa processing can take time</li>
-          <li>Contact us at crux@horizons.hackclub.com for any visa concerns</li>
+          <li>
+            Contact us at crux@horizons.hackclub.com for any visa concerns
+          </li>
         </ul>
 
         <h3>What to Pack</h3>
         <ul>
           <li>Laptop and charger</li>
-          <li>Comfortable clothing (Sydney is winter in July - bring layers)</li>
+          <li>
+            Comfortable clothing (Sydney is winter in July - bring layers)
+          </li>
           <li>Any necessary medications</li>
           <li>Personal care items</li>
           <li>Passport and travel documents</li>
