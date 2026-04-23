@@ -22,9 +22,9 @@
   justify-content: center;
   padding: 0.75rem 1.1rem;
   border-radius: 10px;
-  border: 2px solid #66483c;
-  background: #9f7a66;
-  color: #f7e6d2;
+  border: 2px solid #3c4166;
+  background: #66669f;
+  color: #d6d2f7;
   text-decoration: none;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -37,8 +37,8 @@
 
 #hero-get-started-btn:hover {
   transform: translateY(-1px);
-  background: #8d6855;
-  color: #fff6ed;
+  background: #57558d;
+  color: #ededff;
 }
 
 #main-wrapper {
@@ -159,8 +159,8 @@ p {
   min-height: 85px;
   padding: 0.7rem 0.8rem;
   border-radius: 16px;
-  border: 2px solid #5f473b;
-  background: linear-gradient(180deg, #d6bda0 0%, #cfb292 100%);
+  border: 2px solid #3c3b5f;
+  background: linear-gradient(180deg, #a1a0d6 0%, #9293cf 100%);
   box-shadow: 0 12px 28px rgba(16, 39, 77, 0.32);
   display: flex;
   align-items: center;
@@ -174,7 +174,7 @@ p {
   width: 100%;
   border: 0;
   background: transparent;
-  color: #966e5a;
+  color: #3c508e;
   font-size: clamp(1.1rem, 2.5vw, 2.2rem);
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -184,7 +184,7 @@ p {
 }
 
 #hero-signup-text::placeholder {
-  color: #966e5a;
+  color: #3c508e;
   font-weight: 700;
   opacity: 1;
 }
@@ -201,9 +201,9 @@ p {
   white-space: nowrap;
   padding: 0.7rem 0.7rem;
   border-radius: 10px;
-  background: #9f7a66;
-  border: 2px solid #694d3f;
-  color: #f8e7d6;
+  background: #66719f;
+  border: 2px solid #394797;
+  color: #d6d9f8;
   font-size: clamp(0.85rem, 1.2vw, 1.2rem);
   font-weight: 800;
   letter-spacing: 0.035em;
@@ -219,8 +219,8 @@ p {
 
 #hero-signup-button:hover {
   transform: translateY(-2px);
-  background: #8d6855;
-  color: #fff6ed;
+  background: #55588d;
+  color: #ededff;
   box-shadow: 0 14px 28px rgba(56, 37, 29, 0.34);
 }
 
