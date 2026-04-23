@@ -35,8 +35,7 @@ export default function Travel() {
             <b>Check-in:</b> July 9 or early July 10
           </li>
           <li>
-            <b>Transport:</b> We'll provide transportation from the airport to
-            the event venue
+            <b>Transport:</b> Students will make their own way from the airport to the venue.
           </li>
         </ul>
 
@@ -46,8 +45,7 @@ export default function Travel() {
             <b>Checkout:</b> July 12 or July 13
           </li>
           <li>
-            <b>Transport:</b> We'll arrange transportation back to Sydney
-            Airport
+            <b>Transport:</b> Students will be let out from the venue and will make their own way back to the airport or other destinations.
           </li>
         </ul>
 

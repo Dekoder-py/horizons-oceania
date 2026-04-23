@@ -12,7 +12,7 @@ export default function EventDetails() {
           <br />
           <b>Where:</b> Sydney, Australia
           <br />
-          <b>Age:</b> 13-18 years old
+          <b>Ages:</b> 13-18 years old(inclusive)
         </p>
 
         <h3>What to Expect</h3>
@@ -47,6 +47,15 @@ export default function EventDetails() {
           be reimbursed for their travel or stay. They may check the venue to
           make sure it is safe under the supervision of staff if necessary.
         </p>
+
+        <h3>Packing list</h3>
+        <ul>
+          <li>A sleeping bag</li>
+          <li>Toiletries(toothbrush, toothpaste, etc.)</li>
+          <li>A laptop and charger</li>
+          <li>A refillable water bottle</li>
+          <li>Any necessary medication</li>
+        </ul>
 
         <h3>Questions?</h3>
         <p>
